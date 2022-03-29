@@ -9,7 +9,7 @@ from django.db import models
 
 class Products(models.Model):
     name = models.CharField(max_length=150)
-    slug = models.SlugField(null=False)
+    slug = models.SlugField(null=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=10000, decimal_places=2)
     image = models.ImageField(upload_to='imges', blank=True)
