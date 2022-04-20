@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device=width, initail-sacle=1.0"
+    <meta name="viewport" content="width=device=width, initail-sacle=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1> Formation Django </h1>
+    <h1> Formation Django : formation ultime </h1>
+    <h4> {{ nom }} </h4>
+    <h4> {{ numero }} </h4>
+    <h4> {{ maList }} </h4>
+    {% for item  in maList %}
+    <li> {{ item }} </li>
+    {% empty %}
+    <h3> Pas d'élément pour l'instant <h3>
+    {% endfor %}
 </body>
 </html>
